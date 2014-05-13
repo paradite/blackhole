@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Black Hole</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Black Hole</string>
+    <string name="title_activity_sec">MainActivity</string>
+	<string name="achievements">Achievements</string>
+    <string name="credits">Credits</string>
+    <string name="play">Play</string>
+    <string name="story">Story</string>
+    <string name="intro">Introduction</string>
+    <string name="name">Name</string>
+    <string name="options">Options</string>
+    <string name="upgrades">Upgrades</string>
+    <string name="large_text">Large Text</string>
+    <string name="highscore">High Score</string>
+    <string name="instructions">Instructions</string>
+    <string name="info">Information</string>
+    <string name="movieurl">/videos</string>
+     <string name="namebh">Name Your Black Hole</string>
+     <string name="howto">Instructions</string>
+      <string name="defaultname">Player</string>
+    
+</resources>
