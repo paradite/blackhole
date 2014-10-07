@@ -1,5 +1,6 @@
 package ac.thack.black.hole;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -22,7 +23,7 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
     private static final String TAG = "MainActivity";
     public final int REQUEST_LEADERBOARD = 123;
 	public boolean howToSeen;
-	MediaPlayer musicPlayer;
+	public static MediaPlayer musicPlayer;
 	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
@@ -134,6 +135,7 @@ public class MainActivity extends BaseGameActivity implements View.OnClickListen
         if(sign_out != null) sign_out.setVisibility(View.GONE);
     }
 
+    @Override
     public void onSignInSucceeded() {
         // show sign-out button, hide the sign-in button
         View sign_in = findViewById(R.id.sign_in_button);

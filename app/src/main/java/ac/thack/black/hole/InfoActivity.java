@@ -1,5 +1,6 @@
 package ac.thack.black.hole;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.view.View;
 
 import ac.thack.black.hole.R;
 
-public class InfoActivity extends MainActivity {
+public class InfoActivity extends Activity {
 	 @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
@@ -47,15 +48,4 @@ public class InfoActivity extends MainActivity {
 			  Intent intent = new Intent(this, InstructionsActivity.class);
 			  startActivity(intent);
 			}
-		@Override
-		protected void onPause() {
-			musicPlayer.stop(); 
-			super.onPause();
-		    
-		}
-		@Override
-		protected void onResume() {
-			musicPlayer.start(); 
-			super.onResume();
-		}
 }

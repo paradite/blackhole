@@ -1,5 +1,6 @@
 package ac.thack.black.hole;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.view.View;
 
 import ac.thack.black.hole.R;
 
-public class HowtoActivity extends MainActivity {
+public class HowtoActivity extends Activity {
     private static final String TAG = HowtoActivity.class.getSimpleName();
 	  @Override
 	    public void onCreate(Bundle savedInstanceState) {
@@ -25,15 +26,4 @@ public class HowtoActivity extends MainActivity {
  		 startActivity(intent);
  		 this.finish();
 	  }
-		@Override
-		protected void onPause() {
-			musicPlayer.stop(); 
-			super.onPause();
-		    
-		}
-		@Override
-		protected void onResume() {
-			musicPlayer.start(); 
-			super.onResume();
-		}
 }

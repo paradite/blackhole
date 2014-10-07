@@ -1,5 +1,6 @@
 package ac.thack.black.hole;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.widget.VideoView;
@@ -9,7 +10,7 @@ import java.io.File;
 import ac.thack.black.hole.R;
 
 
-public class IntroActivity extends MainActivity {
+public class IntroActivity extends Activity {
 	  @Override
 
 		  public void onCreate (Bundle icicle) {
@@ -36,16 +37,5 @@ public class IntroActivity extends MainActivity {
 		        v.start ();
 		  
 		    }
-		@Override
-		protected void onPause() {
-			musicPlayer.stop(); 
-			super.onPause();
-		    
-		}
-		@Override
-		protected void onResume() {
-			musicPlayer.start(); 
-			super.onResume();
-		}
 		
 	    }
