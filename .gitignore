@@ -4,4 +4,4 @@
 .DS_Store
 
 #release version
-./app/app-release.apk
+/app/app-release.apk
